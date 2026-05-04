@@ -1,0 +1,7 @@
+{
+  "name": "leetcode-challenges-python",
+  "version": "1.0.0",
+  "scripts": {
+    "leet": "python get_challenge.py"
+  }
+}
