@@ -1,0 +1,3 @@
+🧠 Tips ⏱️
+
+- HashMap: frequency count, complement of a number, duplicate numbers, group elements ...
