@@ -1,6 +1,6 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        h, n = len(haystack), len(needle)
+        h, n = len(haystack), len(needle) #*two pointers*
 
         for left in range(h - n + 1):
             j = 0
