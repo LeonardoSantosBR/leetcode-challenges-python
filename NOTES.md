@@ -19,3 +19,7 @@ Listas Ligadas (ponteiros lento–rápido) : Detectar ciclos, encontrar o nó do
 - Aplicações:
 Busca em arrays ordenados.
 Localização da primeira/última ocorrência ou da correspondência mais próxima em um array ordenado.
+
+
+* *binary tree*: explicação: https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/
+- árvore binária é uma estrutura de dados hierárquica na qual cada nó tem no máximo dois filhos, denominados filho esquerdo e filho direito.
