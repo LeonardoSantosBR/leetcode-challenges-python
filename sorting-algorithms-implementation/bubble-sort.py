@@ -1,4 +1,4 @@
-def bubble_sort(list: list[int]):
+def bubble_sort(list: list[int]) -> list[int]:
     size = len(list)
     
     for _ in list:
@@ -8,7 +8,7 @@ def bubble_sort(list: list[int]):
                 is_sorted = False
                 list[i+1], list[i] = list[i] , list[i+1]
         if is_sorted:
-            return
+            return list
             
 bubble_sort([5,4,3,2,1])
 bubble_sort([1,3,4,5,2])
