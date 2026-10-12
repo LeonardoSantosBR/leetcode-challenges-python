@@ -10,6 +10,5 @@ def bubble_sort(list: list[int]):
         if is_sorted:
             return
             
-
 bubble_sort([5,4,3,2,1])
 bubble_sort([1,3,4,5,2])
