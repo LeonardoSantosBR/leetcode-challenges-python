@@ -35,12 +35,12 @@ solution.countIntersectingIntervals(intervals=[[1,2],[3,4],[5,6]])
 #   -_ significa “vou receber esse valor, mas não pretendo usá-lo”
 #   
 #
-#    line 18   
-#    for i in range(len(intervals)):
-#        start, e = intervals[i]
-#    -for i, (_, e) in enumerate(intervals): pega o índice de cada intervalo e já separa o intervalo em início e fim.
-#    -para cada intervalo upper_bound devolve o indice cujo start é maior que o fim de target
+#   line 18   
+#   for i in range(len(intervals)):
+#       start, e = intervals[i]
+#   -for i, (_, e) in enumerate(intervals): pega o índice de cada intervalo e já separa o intervalo em início e fim.
+#   -para cada intervalo upper_bound devolve o indice cujo start é maior que o fim de target
 #    
-#    line 20 
-#    -soma ao total quantos intervalos cruzam com o intervalo atual i e que vêm depois dele na lista ordenada.
-# #
+#   line 20 
+#   -soma ao total quantos intervalos cruzam com o intervalo atual i e que vêm depois dele na lista ordenada.
+#

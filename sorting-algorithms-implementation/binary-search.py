@@ -14,3 +14,4 @@ def binary_search(list: list[int], n: int) -> int:
     return -1
           
 binary_search([4,5,2,3,6,9,1],3)
+binary_search([0,1,2,3,4],0)
