@@ -26,21 +26,21 @@ solution.countIntersectingIntervals(intervals=[[1,5],[2,4],[3,6]])
 solution.countIntersectingIntervals(intervals=[[1,2],[3,4],[5,6]])
 
 
-#   line 4
-#   starts = []
-#   for s, _ in intervals:
-#       starts.append(s)
-#   -for s, _ in intervals percorre a lista intervals. Cada elemento é um par [start, end], e o Python desempacota 
-#   o par em duas variáveis: s recebe o primeiro valor (o início), _ recebe o segundo (o fim).
-#   -_ significa “vou receber esse valor, mas não pretendo usá-lo”
-#   
+# Explicação dos trechos principais:
 #
-#   line 18   
-#   for i in range(len(intervals)):
-#       start, e = intervals[i]
-#   -for i, (_, e) in enumerate(intervals): pega o índice de cada intervalo e já separa o intervalo em início e fim.
-#   -para cada intervalo upper_bound devolve o indice cujo start é maior que o fim de target
-#    
-#   line 20 
-#   -soma ao total quantos intervalos cruzam com o intervalo atual i e que vêm depois dele na lista ordenada.
+# `starts` guarda apenas os inícios dos intervalos. Como os intervalos estão
+# ordenados, essa lista pode ser usada pela busca binária.
 #
+# Em `for s, _ in intervals`, cada intervalo é desempacotado em duas variáveis:
+# `s` recebe o início e `_` recebe o fim. O `_` indica que esse valor não será
+# utilizado nesse trecho.
+#
+# `enumerate(intervals)` fornece o índice `i` e o intervalo atual. O padrão
+# `(_, e)` ignora o início e guarda apenas o fim em `e`.
+#
+# Para cada intervalo, `upper_bound(e)` encontra a primeira posição cujo início
+# é maior que `e`. Assim, os intervalos entre `i + 1` e essa posição intersectam
+# o intervalo atual. Essa quantidade é adicionada a `count`.
+#
+# Linha 20 soma ao total quantos intervalos cruzam com o intervalo atual i e que 
+# vêm depois dele na lista ordenada.
